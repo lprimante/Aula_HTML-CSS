@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: aqua;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+h3 {
+    color:chocolate;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+}
+
+header p {
+    font-weight: bold;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section > a, section > button, section > div > button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+article > div {
+    border: 5px solid aqua;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+footer {
+    background-color: aqua;
+}
+
+footer > p {
+    margin-bottom: 0;
+    text-align: center;
+}

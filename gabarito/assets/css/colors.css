@@ -1,0 +1,9 @@
+/* Leia mais: https://developer.mozilla.org/pt-BR/docs/Web/CSS/:root */
+:root {
+    --deep-saffron: #ff9331ff;
+    --persian-indigo: #341e67ff;
+    --white: #fefefeff;
+    --sky-blue-crayola: #01dafeff;
+    --plump-purple: #59499eff;
+    --wisteria: #d0a9ecff;
+}
