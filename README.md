@@ -2,6 +2,8 @@
 
 Sejam bem vindos as aulas de HTML e CSS, para iniciar, vamos relembrar alguns conceitos básicos?
 
+Link do projeto desenvolvido durante a aula: [Regaste Pet]()
+
 ## HTML de A a Z
 
 HTML é uma abreviação de Hyper Text Markup Language (linguagem de marcação em hipertexto). Isso mesmo, HTML não é uma linguagem de programação, pois não tem lógica (algoritmos, processos, etc). Ele cria a estrutura de uma página ou aplicação web, determinando a separação de layout e seu conteúdo. Os sites, nos seus primórdios, eram basicamente feitos de html puro! Da uma olhadinha nesse site dos anos 90 que continua até hoje no ar:
