@@ -2,7 +2,7 @@
 
 Sejam bem vindos as aulas de HTML e CSS, para iniciar, vamos relembrar alguns conceitos básicos?
 
-Link do projeto desenvolvido durante a aula: [Regaste Pet]()
+Link do projeto desenvolvido durante a aula: [Regaste Pet](https://github.com/lprimante/resgate-pet)
 
 ## HTML de A a Z
 
