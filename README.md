@@ -312,14 +312,20 @@ No HEX a estrutura rr (vermelho), gg (verde) e bb (azul) são valores hexadecima
 Exemplo:
 ![RGB e HEX no CSS](/images/CSS-RGB-HEX.png)
 
-Opacidade
+[RGB na prática](/exemplos/rgb.html)
+
+[HEX na prática](/exemplos/hex.html)
+
+**Opacidade**
 
 RGBA
 
-rgba( vermelho, verde , azul, alfa )
-O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (nada transparente)
+> rgba( vermelho, verde , azul, alfa )
+> O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (nada transparente)
 
 ![Opacidade de cores no CSS](/images/CSS-opacidade.png)
+
+[RGBA na prática](/exemplos/rgba.html)
 
 ### Posicionando elementos
 
@@ -337,11 +343,15 @@ Existem cinco valores de posição diferentes:
 
 Os elementos são então posicionados usando as propriedades superior, inferior, esquerda e direita. No entanto, essas propriedades não funcionarão a menos que a propriedade position seja definida primeiro. Eles também funcionam de forma diferente dependendo do valor da posição.
 
+[Exemplos de position na prática](/exemplos/position.html)
+
 **Macete de centralização:**
 
 Funciona apenas para elementos do tipo `display: block`
 
 Defina um tamanho para seu elemento através da propriedade `width` e defina `margin: 0 auto`
+
+[Exemplo de centralização na prática](/exemplos/centralizando.html)
 
 #### Float
 
@@ -354,7 +364,9 @@ A propriedade float pode ter um dos seguintes valores:
 - none - O elemento não flutua (será exibido exatamente onde ocorre no texto). Isso é padrão
 - inherit - O elemento herda o valor float de seu pai
 
-Em seu uso mais simples, a propriedade float pode ser usada para quebrar o texto em torno das imagens.
+[Exemplo de float na prática: em seu uso mais simples, a propriedade float pode ser usada para quebrar o texto em torno das imagens.](/exemplos/float.html)
+
+[Mais exemplos de uso do float](https://www.w3schools.com/css/css_float_examples.asp)
 
 ### Seletores
 
@@ -362,11 +374,178 @@ Seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HT
 
 Podemos dividir os seletores CSS em cinco categorias:
 
-- Seletores simples (selecione elementos com base no nome, id, classe)
-- Seletores de combinação (selecione elementos com base em um relacionamento específico entre eles)
-- Seletores de pseudo-classe (selecionar elementos com base em um determinado estado)
-- Seletores de pseudo-elementos (selecione e estilize uma parte de um elemento)
-- Seletores de atributo (selecione elementos com base em um atributo ou valor de atributo)
+[- Seletores simples (selecione elementos com base no nome, id, classe)]()
+
+```HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+section {
+    margin: 150px 0;
+}
+#contato {
+    padding: 10px;
+}
+.blue {
+    color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores simples</h1>
+
+<section id="contato">
+    <p class="blue">Selecione o elemento pelo nome da tag, classe ou id</p>
+</section>
+
+</body>
+</html>
+```
+
+[- Seletores de combinação (selecione elementos com base em um relacionamento específico entre eles)](https://www.w3schools.com/css/css_combinators.asp)
+
+- seletor descendente (espaço)
+- seletor filho (>)
+- seletor irmão adjacente (+)
+- seletor geral de irmãos (~)
+
+```HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+section#contato  {
+    margin: 150px 0;
+}
+p.blue {
+    color: blue;
+}
+section + p {
+    color: violet;
+}
+section > p {
+    color: violet;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores de combinação</h1>
+
+<section id="contato">
+    <p class="blue">Selecione o elemento pelo nome da tag, classe ou id</p>
+    <p>Selecione elementos diferentes a depender da especificidade do seletor</p>
+</section>
+
+<p>Eu sou irmão da section</p>
+
+</body>
+</html>
+```
+
+[- Seletores de pseudo-classe (selecionar elementos com base em um determinado estado)](https://www.w3schools.com/css/css_pseudo_classes.asp)
+
+- Estilizar um elemento quando um usuário passa o mouse sobre ele
+- Estilize links visitados e não visitados de maneira diferente
+- Estilize um elemento quando ele estiver em foco
+
+```HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+section#contato  {
+    margin: 150px 0;
+}
+p.blue {
+    color: blue;
+}
+p.blue:hover {
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores de pseudo-classe</h1>
+
+<section id="contato">
+    <p class="blue">Selecione o elemento pelo nome da tag, classe ou id</p>
+    <p>Selecione elementos diferentes a depender da especificidade do seletor</p>
+</section>
+
+</body>
+</html>
+```
+
+[- Seletores de pseudo-elementos (selecione e estilize uma parte de um elemento)](https://www.w3schools.com/css/css_pseudo_elements.asp)
+
+```HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+p.pseudo::first-letter {
+    color: green;
+    font-size: xx-large;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores de pseudo-elemento</h1>
+
+<section id="contato">
+    <p class="pseudo">Selecione o elemento pelo nome da tag, classe ou id</p>
+    <p>Selecione elementos diferentes a depender da especificidade do seletor</p>
+</section>
+
+</body>
+</html>
+```
+
+[- Seletores de atributo (selecione elementos com base em um atributo ou valor de atributo)](https://www.w3schools.com/css/css_attribute_selectors.asp)
+
+```HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+[title~="titulo"] {
+    color: green;
+    font-size: xx-large;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores de pseudo-atributo</h1>
+
+<section id="contato">
+    <p title="titulo">Selecione o elemento a partir de um atributo</p>
+    <input >
+</section>
+
+</body>
+</html>
+```
+
+[Exemplos de seletores](/exemplos/seletores.html)
+
+**Especificidade**
+
+Se houver duas ou mais regras CSS que apontam para o mesmo elemento, o seletor com o maior valor de especificidade "vencerá" e sua declaração de estilo será aplicada a esse elemento HTML.
+
+Pense na especificidade como uma pontuação/classificação que determina qual declaração de estilo é aplicada a um elemento.
+
+- Estilos embutidos - **Exemplo:** `<h1 style="color: pink;">`
+- IDs - **Exemplo:** #navbar
+- Classes, pseudoclasses, seletores de atributos - **Exemplo:** .test, :hover, [href]
+- Elementos e pseudoelementos - **Exemplo:** h1, :before
+
+[Leia mais sobre especificidade](https://www.w3schools.com/css/css_specificity.asp)
 
 #### Classes e id
 
@@ -380,23 +559,41 @@ O CSS aceita transformações em 2D e 3D para gerar algumas animações através
 
 Com a propriedade CSS transform você pode usar os seguintes métodos de transformação 2D:
 
-- translate()
-- rotate()
-- scaleX()
-- scaleY()
-- scale()
-- skewX()
-- skewY()
-- skew()
-- matrix()
+[- translate()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_translate)
+
+[- rotate()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotate)
+
+[- scale()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scale)
+
+[- scaleX()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scaleX)
+
+[- scaleY()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_scaleY)
+
+[- skew()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skew)
+
+[- skewX()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skewx)
+
+[- skewY()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_skewy)
+
+[- matrix()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_matrix1)
 
 #### Métodos de transformações CSS 3D
 
 Com a propriedade CSS transform você pode usar os seguintes métodos de transformação 3D:
 
-- rotateX()
-- rotateY()
-- rotateZ()
+[- rotateX()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotateX)
+
+[- rotateY()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotateY)
+
+[- rotateZ()](https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_rotateZ)
+
+**Animações feitas com CSS Puro**
+
+https://webdesign.tutsplus.com/pt/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+
+https://blog.hubspot.com/website/css-animation-examples
 
 ## Dicas
 
@@ -442,18 +639,18 @@ O nome do bloco e o nome do elemento são separados por dois underlines (\_\_):
 </form>
 ```
 
-O modificador é separado do nome do bloco ou elemento por um único sublinhado (\_):
+O modificador é separado do nome do bloco ou elemento por dois sublinhado (\--):
 
 ```HTML
 <form class= "search-form">
-    <input class="search-form__input-error">
+    <input class="search-form__input--error">
 
     <button class="search-form__button">Pesquisar</button>
 </form>
 ```
 
 ```CSS
-.search-form__input-error {
+.search-form__input--error {
     border: 1px solid red;
 }
 ```

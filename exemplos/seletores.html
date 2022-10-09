@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+section#section1  {
+    margin: 50px 0;
+}
+p {
+    color: red;
+}
+section + p {
+    color: violet;
+}
+p:hover {
+    color: yellow;
+}
+p.blue {
+    color: blue;
+}
+p.blue:hover {
+    color: green;
+}
+p.pseudo::first-letter {
+    color: green;
+    font-size: xx-large;
+}
+[title~="titulo"] {
+    color: green;
+    font-size: xx-large;
+}
+</style>
+</head>
+<body>
+
+<h1>Exemplo seletores:</h1>
+
+<section id="section1">
+    <p class="blue">Selecione o elemento pelo nome da tag, classe ou id</p>
+    <p>Selecione elementos diferentes a depender da especificidade do seletor</p>
+    <ul>
+        <li>Estilizar um elemento quando um usuário passa o mouse sobre ele</li>
+        <li>Estilize links visitados e não visitados de maneira diferente</li>
+        <li>Estilize um elemento quando ele estiver em foco</li>
+    </ul>
+</section>
+<p>Eu sou irmão da section</p>
+<section id="section2">
+    <p class="pseudo">Um pseudoelemento CSS é usado para estilizar partes especificadas de um elemento.</p>
+
+    <p>Por exemplo, pode ser usado para:</p>
+    <ul>
+        <li>Estilize a primeira letra de um elemento</li>
+        <li>Estilize a primeira linha de um elemento</li>
+        <li>Inserir conteúdo antes ou depois do conteúdo de um elemento</li>
+    </ul>
+</section>
+<section id="section3">
+    <p title="titulo">Selecione o elemento a partir de um atributo</p>
+</section>
+
+</body>
+</html>

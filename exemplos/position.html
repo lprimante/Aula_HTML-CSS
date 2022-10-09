@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+section {
+    margin: 150px 0;
+}
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h1>position:</h1>
+
+<p>A position sticky é usada para fixar elementos conforme acontece o <b>scroll</b> na página.</p>
+<div class="sticky">Esta div tem position: sticky;</div>
+
+<section>
+    <p>A position static é a padrão dos elementos.</p>
+    <div class="static">
+    Esta div tem position: static;
+    </div>
+</section>
+
+<section>
+    <p>As positions relative e absolute são usados para sobrepor dois elementos de uma página.</p>
+    <div class="relative">Esta div tem position: relative;
+        <div class="absolute">Esta div tem position: absolute;</div>
+    </div>
+</section>
+
+<section>
+    <p>O position fixed é muito usado para elementos como Navbar fixas no topo da página.</p>
+    <div class="fixed">
+        Esta div tem position: fixed;
+    </div>
+</section>
+
+
+</body>
+</html>
