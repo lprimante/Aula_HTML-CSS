@@ -8,12 +8,12 @@ Vamos criar um novo arquivo quemsomos.html e um novo arquivo de estilo quemsomos
 Coloque-os dentro da pasta, conforme exemplo abaixo:
 
 ```
-|\_\_css
+|__css
     style.css
     quemsomos.css
-|\_\_pages
+|__pages
     quemsomos.html
-|\_\_images
+|__images
     foto1.jpg
     foto2.jpg
 index.html
