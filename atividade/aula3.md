@@ -6,9 +6,9 @@ Uma ONG de resgate de animais solicitou para você criar um site com uma página
 
 Vamos ao último passo para terminar de personalizar seu site!
 
-- Agora vamos reposicionar alguns elementos utilizando float e position
-- Vamos organizar nosso CSS e passar a usar classes para identificar nossos elementos!
 - Que tal usar cores com RGBA, RGB e HEX? Use a documentação abaixo para gerar paletas de cores <3
+- Vamos organizar nosso CSS e passar a usar classes para identificar nossos elementos!
+- Agora vamos reposicionar alguns elementos utilizando float, position e flex (bônus)
 - Inclua IDs nas sessões e vamos linkar nosso menu com as sessões do site
 
 **Coloque mais cor no seu site:**
