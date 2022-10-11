@@ -4,8 +4,9 @@ Uma ONG de resgate de animais solicitou para você criar um site com uma página
 
 Nós entregamos o projeto para a ONG e eles adoraram, mas nos pediram para incluir uma nova página contando um pouco mais sobre a história do projeto!
 
-Vamos criar um novo arquivo quemsomos.html e um novo arquivo de estilo quemsomos.css
-Coloque-os dentro da pasta, conforme exemplo abaixo:
+1. Vamos criar um novo arquivo quemsomos.html e um novo arquivo de estilo quemsomos.css
+
+2. Coloque-os dentro da pasta, conforme exemplo abaixo:
 
 ```
 |__css
@@ -19,7 +20,10 @@ Coloque-os dentro da pasta, conforme exemplo abaixo:
 index.html
 ```
 
-A página deverá conter o header e o footer
-A página deverá ter um título, texto e foto
-Adicionem um novo item no menu principal da header e linkar para a página
-Adicione o que julgar necessário a sua página, como links, +fotos, listas, etc
+3. Adicionem um novo item no menu principal da header e linkar para a página
+
+4. A página deverá conter o header e o footer
+
+5. A página deverá ter um título, texto e foto
+
+6. Na nova página adicione o que julgar necessário, como links, +fotos, listas, etc...
