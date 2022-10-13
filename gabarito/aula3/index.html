@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resgate Pet</title>
+        <link rel="stylesheet" href="./css/style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <header class="header">
+                <img src="../images/ilustracao1.svg" alt="Ilustração de cachorro e gato" width="100px" />
+                <nav class="header__menu-nav">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#adopting">Adote um pet</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#contribute">Contribua</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#singup">Cadastra-se</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="container-video">
+                <video class="container-video__movie" width="100%" loop muted>
+                    <source src="../images/menino-e-cachorro.mp4" type="video/mp4">
+                    Seu navegador não é compativel com este vídeo.
+                </video>
+                <div class="container-video__onboarding">
+                    <h1 class="onboarding__title">Resgate Pet</h1>
+                    <p class="onboarding__subtitle" title="meu texto">Conheça mais sobre o trabalho da nossa ONG</p>
+                    <a class="onboarding__link" href="#">Veja como ajudar</a>
+                </div>
+            </section>
+            <section id="adopting" class="container-adopting">
+                <h2 class="container-adopting__title">Adote</h2>
+                <article class="container-adopting__article">
+                    <h3>Cachorros</h3>
+                    <div class="container-adopting__item">
+                        <img src="../images/dog1.jpg" alt="cachorro deitado grama"  width="200px">
+                        <p>Dó</p>
+                    </div>
+                    <div class="container-adopting__item">
+                        <img src="../images/dog2.jpg" alt="cachorro de pé na grama" width="200px">
+                        <p>Re</p>
+                    </div>
+                    <div class="container-adopting__item">
+                        <img src="../images/dog3.jpg" alt="cachorro deitado no chão"  width="200px">
+                        <p>Mi</p>
+                    </div>
+                </article>
+                <article class="container-adopting__article">
+                    <h3>Gatos</h3>
+                    <div class="container-adopting__item">
+                        <img src="../images/cat1.jpg" alt="gato sentado olhando para a camêra" width="200px">
+                        <p>Liz</p>
+                    </div>
+                    <div class="container-adopting__item">
+                        <img src="../images/cat2.jpg" alt="gato deitado de barriga para cima" width="200px">
+                        <p>Violeta</p>
+                    </div>
+                    <div class="container-adopting__item">
+                        <img src="../images/cat3.jpg" alt="gato se espreguiçando" width="200px">
+                        <p>Margarida</p>
+                    </div>
+                </article>
+            </section>
+            <section id="contribute" class="container-contribute">
+                <h2>Contribua</h2>
+                <div class="contribute-info">
+                    <img class="contribute__image" src="../images/ilustracao2.svg" width="300px" alt="Ilustração cachorro e gato lado a lado" />
+                </div>
+                <div class="contribute__text">
+                    <p>Ajude a manter a nossa ONG Regaste Pet achando lares para nossos queridos bichinhos!</p>
+                    <button class="button">Faça sua doação</button>
+                </div>
+            </section>
+            <section id="singup">
+                <h2>Cadastra-se</h2>
+                <form>
+                    <label for="inputemail">Email</label>
+                    <input placeholder="Insira seu email aqui" type="email" id="inputemail" name="email">
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <footer>
+                <div>
+                    <img src="../images/ilustracao1.svg" alt="Ilustração de cachorro e gato" width="100px" />
+                    <address>
+                        <p>Regaste Pet</p>
+                        <p>Rua da Graça, 123</p>
+                        <p>São Paulo</p>
+                        <a href="mailto:contatoresgatepet@gmail.com">contatoresgatepet@gmail.com</a>
+                    </address>
+                </div>
+                <p>Copyright © 2022 | Feito com carinho pela turma da Tera</p>
+            </footer>
+        </main>
+    </body>
+</html>

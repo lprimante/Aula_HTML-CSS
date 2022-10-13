@@ -1,0 +1,75 @@
+/* Trocar paleta de cores, trocar os seletores dos elementos por classe, corrigir posicionamento dos elementos 
+azul: #01dafeff roxo-claro: #d0a9ecff roxo-médio: #59499eff roxo-excuro: #341e67ff branco: #fefefeff
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: aqua;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+h3 {
+    color: chocolate;
+}
+
+header {
+    background-color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 600;
+}
+
+section a, section button {
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+article p {
+    display: inline-block;
+}
+
+article div {
+    background-color: aqua;
+    padding: 20px;
+}
+
+article > div > p {
+    color: white;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: aqua;
+}
+
+footer > p {
+    text-align: center;
+}
