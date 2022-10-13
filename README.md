@@ -656,3 +656,12 @@ O modificador é separado do nome do bloco ou elemento por dois sublinhado (\--)
 ```
 
 Saiba mais: [Metodologia BEM](https://desenvolvimentoparaweb.com/css/bem/)
+
+### Deploy - Colocando nosso site no ar!
+
+Utilizando o github pages é possível colocar seu projeto no ar com poucos cliques!
+Acesse as **settings (configurações)** do repositório e clique no menu lateral em **pages (páginas)**, não esqueça de selecionar a **branch main (ramo principal)** para que ele "ache" seu projeto!
+
+![deploy no github pages](/images/deploy.jpg)
+
+> Obs: Lembrem-se o arquivo **index.html** do seu site deve estar na pasta raiz do seu repositório e o conteúdo na **branch main** para que funcione.
